@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /frontend-code/*
+    destination: /opt/frontend-code
+hooks:
+  BeforeInstall:
+    - location: scripts/before_intsall.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/restart_service.sh
+      timeout: 300
+      runas: root
+  
