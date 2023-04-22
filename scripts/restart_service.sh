@@ -1,2 +1,2 @@
 #!/bin/bash
-systemctl nginx restart
+sudo systemctl restart nginx
