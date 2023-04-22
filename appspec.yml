@@ -5,6 +5,7 @@ files:
     destination: /opt/frontend-code/
   - source: ./nginx.conf
     destination: /etc/nginx/
+file_exists_behavior: OVERWRITE
 hooks:
   BeforeInstall:
     - location: scripts/before_intsall.sh
