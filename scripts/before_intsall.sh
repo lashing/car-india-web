@@ -1,2 +1,2 @@
 #!/bin/bash
-cp nginx.conf /etc/nginx/nginx.conf
+cp ./nginx.conf /etc/nginx/nginx.conf
