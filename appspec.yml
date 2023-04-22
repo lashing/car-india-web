@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: ./frontend-code
-    destination: /opt
+    destination: /opt/frontend-code/
   - source: ./nginx.conf
-    destination: /etc/nginx/nginx.conf
+    destination: /etc/nginx/
 hooks:
   BeforeInstall:
     - location: scripts/before_intsall.sh
