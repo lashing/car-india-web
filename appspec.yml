@@ -3,6 +3,8 @@ os: linux
 files:
   - source: ./frontend-code
     destination: /opt
+  - source: ./nginx.conf
+    destination: /etc/nginx/nginx.conf
 hooks:
   BeforeInstall:
     - location: scripts/before_intsall.sh
