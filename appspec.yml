@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /frontend-code/*
-    destination: /opt/frontend-code
+  - source: ./frontend-code
+    destination: /opt
 hooks:
   BeforeInstall:
     - location: scripts/before_intsall.sh
