@@ -13,6 +13,8 @@ const responsive = {
     }
 }
 
+document.getElementById("topselling").src =  window.location.origin + "/top-selling-list";
+
 $(document).ready(function () {
 
     $nav = $('.nav');
